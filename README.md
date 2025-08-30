@@ -1,11 +1,3 @@
-
-That means GitHub is treating everything as **code block text**, not actual Markdown.  
-
----
-
-Here’s the **fixed README.md** (no outer backticks, just proper Markdown):
-
-```markdown
 <div align="center">
   <h1>📊 Subscription Tracker API</h1>
   <p>A production-ready API to manage user subscriptions, reminders, and notifications.</p>
@@ -64,75 +56,9 @@ It handles subscription tracking, authentication, email reminders, and structure
 ### Installation
 
 ```bash
-# Clone your repository
+# Clone the repository
 git clone https://github.com/rafay0704/subscription-tracker-upstach-nodemailer.git
 cd subscription-tracker-upstach-nodemailer
 
 # Install dependencies
 npm install
-```
-
-### Set Up Environment Variables
-
-Create a `.env.local` file in the root:
-
-```env
-PORT=5500
-NODE_ENV=development
-DB_URI=mongodb://localhost:27017/subscription-tracker
-
-JWT_SECRET=your-secret-key
-JWT_EXPIRES_IN=1d
-
-EMAIL_PASSWORD=your-email-password
-```
-
-### Run the Project
-
-```bash
-npm run dev
-```
-
-Server runs at:  
-👉 `http://localhost:5500`
-
----
-
-## 🕸️ Snippets
-
-Example Subscription JSON:
-
-```json
-{
-  "name": "Netflix",
-  "price": 15.99,
-  "currency": "USD",
-  "frequency": "monthly",
-  "category": "Entertainment",
-  "startDate": "2025-01-20T00:00:00.000Z",
-  "paymentMethod": "Credit Card"
-}
-```
-
----
-
-## 🚀 Future Improvements
-
-- Add role-based access (Admin, User)  
-- Payment gateway integration  
-- Analytics dashboard for subscriptions  
-- Multi-language support  
-
----
-
-## 👤 Author
-
-**Abdul Rafay**  
-🔗 GitHub: [rafay0704](https://github.com/rafay0704)
-```
-
----
-
-✅ Just replace your `README.md` with this file → commit → push.  
-
-Do you also want me to make this README **look more stylish with shields.io badges** (like Node, Express, MongoDB icons at the top)?
