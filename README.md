@@ -1,148 +1,104 @@
+````markdown
 <div align="center">
-  <br />
-    <a href="https://youtu.be/rOpEN1JDaD0?si=WfOjLV57WfR9x6QK" target="_blank">
-      <img src="https://i.ibb.co/xtTbHkfs/Readme-Thumbnail.png" alt="Project Banner">
-    </a>
-  <br />
-  
-  <div>
-    <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" alt="node.js" />
-    <img src="https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="express.js" />
-    <img src="https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb" />
-  </div>
-
-  <h3 align="center">A Subscription Management System API</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+  <h1>📊 Subscription Tracker API</h1>
+  <p>A production-ready API to manage user subscriptions, reminders, and notifications.</p>
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+---
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets (Code to Copy)](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
+## 📋 Table of Contents
 
-## 🚨 Tutorial
+1. 🤖 [Introduction](#introduction)  
+2. ⚙️ [Tech Stack](#tech-stack)  
+3. 🔋 [Features](#features)  
+4. 🤸 [Quick Start](#quick-start)  
+5. 🕸️ [Snippets](#snippets)  
+6. 🚀 [Future Improvements](#future-improvements)  
+7. 👤 [Author](#author)
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+---
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+## 🤖 Introduction
 
-<a href="https://youtu.be/rOpEN1JDaD0?si=WfOjLV57WfR9x6QK" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+This is a **Subscription Management System API** built with **Node.js, Express, and MongoDB**.  
+It handles subscription tracking, authentication, email reminders, and structured API architecture for scalability.
 
-## <a name="introduction">🤖 Introduction</a>
+---
 
-Build a **production-ready Subscription Management System API** that handles **real users, real money, and real business logic**.  
+## ⚙️ Tech Stack
 
-Authenticate users using JWTs, connect a database, create models and schemas, and integrate it with ORMs. Structure the architecture of your API to ensure scalability and seamless communication with the frontend.  
+- **Node.js** – Server runtime  
+- **Express.js** – Backend framework  
+- **MongoDB + Mongoose** – Database & ORM  
+- **JWT** – Authentication  
+- **Nodemailer** – Email notifications  
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
+---
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+## 🔋 Features
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+- **User Authentication (JWT)** – Secure login & signup  
+- **Subscription Management** – Create, update, delete, and track subscriptions  
+- **Email Reminders** – Automated email notifications for renewals  
+- **Error Handling** – Global error middleware  
+- **Logging** – Debugging & monitoring  
+- **Environment Config** – `.env` file support  
 
-- Node.js
-- Express.js
-- MongoDB
+---
 
-## <a name="features">🔋 Features</a>
+## 🤸 Quick Start
 
-👉 **Advanced Rate Limiting and Bot Protection**: with Arcjet that helps you secure the whole app.
+### Prerequisites
+- [Git](https://git-scm.com/)  
+- [Node.js](https://nodejs.org/)  
+- [npm](https://www.npmjs.com/)  
+- [MongoDB](https://www.mongodb.com/)
 
-👉 **Database Modeling**: Models and relationships using MongoDB & Mongoose.
-
-👉 **JWT Authentication**: User CRUD operations and subscription management.
-
-👉 **Global Error Handling**: Input validation and middleware integration.
-
-👉 **Logging Mechanisms**: For better debugging and monitoring.
-
-👉 **Email Reminders**: Automating smart email reminders with workflows using Upstash.
-
-and many more, including code architecture and reusability
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
+### Installation
 
 ```bash
-git clone https://github.com/adrianhajdin/subscription-tracker-api.git
-cd subscription-tracker-api
-```
+# Clone your repository
+git clone https://github.com/rafay0704/subscription-tracker-upstach-nodemailer.git
+cd subscription-tracker-upstach-nodemailer
 
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
+# Install dependencies
 npm install
-```
+````
 
-**Set Up Environment Variables**
+### Set Up Environment Variables
 
-Create a new file named `.env.local` in the root of your project and add the following content:
+Create a `.env.local` file in the root:
 
 ```env
-# PORT
 PORT=5500
-SERVER_URL="http://localhost:5500"
-
-# ENVIRONMENT
 NODE_ENV=development
+DB_URI=mongodb://localhost:27017/subscription-tracker
 
-# DATABASE
-DB_URI=
+JWT_SECRET=your-secret-key
+JWT_EXPIRES_IN=1d
 
-# JWT AUTH
-JWT_SECRET=
-JWT_EXPIRES_IN="1d"
-
-# ARCJET
-ARCJET_KEY=
-ARCJET_ENV="development"
-
-# UPSTASH
-QSTASH_URL=http://127.0.0.1:8080
-QSTASH_TOKEN=
-
-# NODEMAILER
-EMAIL_PASSWORD=
+EMAIL_PASSWORD=your-email-password
 ```
 
-**Running the Project**
+### Run the Project
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5500](http://localhost:5500) in your browser or any HTTP client to test the project.
+Server runs at:
+👉 `http://localhost:5500`
 
-## <a name="snippets">🕸️ Snippets</a>
+---
 
-<details>
-<summary><code>Dummy JSON Data</code></summary>
+## 🕸️ Snippets
+
+Example Subscription JSON:
 
 ```json
 {
-  "name": "Javascript Mastery Elite Membership",
-  "price": 139.00,
+  "name": "Netflix",
+  "price": 15.99,
   "currency": "USD",
   "frequency": "monthly",
   "category": "Entertainment",
@@ -151,22 +107,20 @@ Open [http://localhost:5500](http://localhost:5500) in your browser or any HTTP 
 }
 ```
 
-</details>
+---
 
-## <a name="links">🔗 Links</a>
+## 🚀 Future Improvements
 
-- **Arcjet** - [https://launch.arcjet.com/4g2R2e4](https://launch.arcjet.com/4g2R2e4)  
-- **Upstash** - [https://bit.ly/42ealiN](https://bit.ly/42ealiN)  
-- **Hostinger** - [https://hostinger.com/mastery10](https://hostinger.com/mastery10)  
-- **WebStorm** - [https://jb.gg/GetWebStormFree](https://jb.gg/GetWebStormFree)  
+* Add role-based access (Admin, User)
+* Payment gateway integration
+* Analytics dashboard for subscriptions
+* Multi-language support
 
-## <a name="more">🚀 More</a>
+---
 
-**Advance your skills with Next.js Pro Course**
+## 👤 Author
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
+**Abdul Rafay**
 
-<a href="https://jsmastery.pro/next15" target="_blank">
-   <img src="https://github.com/user-attachments/assets/b8760e69-1f81-4a71-9108-ceeb1de36741" alt="Project Banner">
-</a>
+Do you also want me to give you a **git command** that will **wipe old commit history** so the repo looks completely new and clean?
+```
