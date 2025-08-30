@@ -60,5 +60,44 @@ It handles subscription tracking, authentication, email reminders, and structure
 git clone https://github.com/rafay0704/subscription-tracker-upstach-nodemailer.git
 cd subscription-tracker-upstach-nodemailer
 
+
+
+Set Up Environment Variables
+
+Create a .env.local file in the root:
+
+PORT=5500
+NODE_ENV=development
+DB_URI=mongodb://localhost:27017/subscription-tracker
+
+JWT_SECRET=your-secret-key
+JWT_EXPIRES_IN=1d
+
+EMAIL_PASSWORD=your-email-password
+
+
 # Install dependencies
 npm install
+
+
+Run the Project
+npm run dev
+
+
+Server runs at:
+👉 http://localhost:5500
+
+
+🚀 Future Improvements
+
+Add role-based access (Admin, User)
+
+Payment gateway integration
+
+Analytics dashboard for subscriptions
+
+Multi-language support
+
+👤 Author
+
+Abdul Rafay
