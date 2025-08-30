@@ -1,4 +1,11 @@
-````markdown
+
+That means GitHub is treating everything as **code block text**, not actual Markdown.  
+
+---
+
+Here’s the **fixed README.md** (no outer backticks, just proper Markdown):
+
+```markdown
 <div align="center">
   <h1>📊 Subscription Tracker API</h1>
   <p>A production-ready API to manage user subscriptions, reminders, and notifications.</p>
@@ -63,7 +70,7 @@ cd subscription-tracker-upstach-nodemailer
 
 # Install dependencies
 npm install
-````
+```
 
 ### Set Up Environment Variables
 
@@ -86,7 +93,7 @@ EMAIL_PASSWORD=your-email-password
 npm run dev
 ```
 
-Server runs at:
+Server runs at:  
 👉 `http://localhost:5500`
 
 ---
@@ -111,16 +118,21 @@ Example Subscription JSON:
 
 ## 🚀 Future Improvements
 
-* Add role-based access (Admin, User)
-* Payment gateway integration
-* Analytics dashboard for subscriptions
-* Multi-language support
+- Add role-based access (Admin, User)  
+- Payment gateway integration  
+- Analytics dashboard for subscriptions  
+- Multi-language support  
 
 ---
 
 ## 👤 Author
 
-**Abdul Rafay**
-
-Do you also want me to give you a **git command** that will **wipe old commit history** so the repo looks completely new and clean?
+**Abdul Rafay**  
+🔗 GitHub: [rafay0704](https://github.com/rafay0704)
 ```
+
+---
+
+✅ Just replace your `README.md` with this file → commit → push.  
+
+Do you also want me to make this README **look more stylish with shields.io badges** (like Node, Express, MongoDB icons at the top)?
